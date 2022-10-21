@@ -1,0 +1,14 @@
+.container {
+  height: 7vh;
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding-inline: 40px;
+}

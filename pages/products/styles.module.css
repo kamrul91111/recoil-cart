@@ -1,0 +1,50 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-inline: 40px;
+}
+
+.leftContainer {
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.imagesContainer {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: red;
+}
+
+.imageItem {
+  position: relative;
+}
+
+.price {
+  font-size: 1.5em;
+}
+
+.cartButton {
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+  background-color: rgb(105, 143, 49);
+  font-size: 0.9em;
+  font-weight: bold;
+  border: none;
+  margin-block: 20px;
+}
+
+.cartButton:active {
+  opacity: 0.9;
+  transform: scale(0.96);
+}
+
+.detailsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}

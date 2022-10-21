@@ -15,7 +15,7 @@ import Page from "../components/Page";
 
 // recoil
 import { useRecoilState } from "recoil";
-import { cartState } from "../recoil/atoms/name";
+import { cartState } from "../recoil/cartState/cartState";
 
 interface IHomeProps {
   data: ProductType[];
@@ -24,10 +24,10 @@ interface IHomeProps {
 const Home: NextPage<IHomeProps> = ({ data }) => {
   const [cart, setCart] = useRecoilState<CartItemType[] | undefined>(cartState);
 
-  const onAdd = (i: ProductType) => {
-    if (cart) {
-      setCart([...cart, { ...i, quantity: 1 }]);
-    }
+  const onAdd = (i: ProductType): void => {
+    if (!cart) return;
+
+    setCart([...cart, { ...i, quantity: 1 }]);
   };
 
   return (

@@ -12,3 +12,17 @@
   font-weight: bold;
   padding-inline: 40px;
 }
+
+.length {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.cartButton {
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: rgb(105, 143, 49);
+  border: none;
+}
